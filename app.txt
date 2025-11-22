@@ -1,0 +1,68 @@
+// function name (...params) {
+//     console.log(params);
+//     console.log(params.length);
+    
+// }
+
+// name("HTML", "CSS", "JavaScript", "Git", "NodeJS", "python");
+
+// ----------------------------------------------------------------
+
+// const usuarioOriginal = {
+//     nombre: "Carlos",
+//     edad: 25
+// };
+
+// console.log(usuarioOriginal);
+
+// // const usuarioCopia = usuarioOriginal;
+// const usuarioCopia = { ...usuarioOriginal };
+
+// usuarioCopia.edad = 30;
+
+// console.log(usuarioOriginal.edad);
+// console.log(usuarioCopia.edad);
+
+// ----------------------------------------------------------------
+
+// const numeros = [1, 2, 3];
+// const copia = [...numeros];
+
+// console.log(copia); // [1, 2, 3]
+
+// numeros.push(6);
+// copia.push(4);
+// copia.push(5);
+
+// console.log(numeros); // [1, 2, 3, 6]
+// console.log(copia); // [1, 2, 3, 4, 5]
+
+// ----------------------------------------------------------------
+
+// const persona = {
+//     nombre: "Laura",
+//     edad: 28,
+//     ciudad: "Bogotá",
+//     cargo: "Desarrolladora"
+// };
+
+// // const nombre = persona.nombre;
+// // const edad = persona.edad;
+// // const ciudad = persona.ciudad;
+
+// const { nombre, edad, ciudad, cargo = "Estudiante" } = persona;
+
+// console.log(nombre, edad, ciudad, cargo);
+
+// ----------------------------------------------------------------
+
+// console.log("Inicio");
+
+// try {
+// const usuario = null;
+// console.log(usuario.nombre); // Esto generará un error
+// } catch (error) {
+// console.error("Ocurrió un error:", error.message);
+// }
+
+// console.log("Fin del programa"); // Sí se ejecuta gracias al manejo del error
